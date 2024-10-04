@@ -1,0 +1,9 @@
+.product-detail-container {
+    display: flex;
+    justify-content: center;
+}
+
+.product-title {
+    display: flex;
+    justify-content: center;
+}

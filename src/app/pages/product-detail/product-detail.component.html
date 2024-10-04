@@ -1,0 +1,21 @@
+<div class="product-title">
+    <h1>Buy our product</h1>
+</div>
+<div class="product-detail-container">
+    @if (loading) {
+        <div class="spinner-border text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    }
+    @if (!loading) {
+    <div class="card" style="width: 18rem;">
+        <img src="{{product?.image}}" class="card-img-top" alt="{{product?.title}}">
+        <div class="card-body">
+            <h5 class="card-title">{{product?.title}}</h5>
+            <h4 class="card-text">{{product?.price | currency }}</h4>
+            <p class="card-text">{{product?.description}}</p>
+        </div>
+        </div>
+    }
+</div>
+

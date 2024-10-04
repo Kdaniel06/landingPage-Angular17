@@ -1,0 +1,10 @@
+.main-container {
+    background-color: #0c0a3e;
+    color: white;
+}
+
+:host {
+    display: block;
+    background-color: #0c0a3e;
+    min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+  }
